@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\web-api\\APIEstacionamento\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\context\\apiestacionamentocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\context\\apiestacionamentocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\models\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\models\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\models\\tipocombustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\models\\tipocombustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\migrations\\20250512174723_populatabela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\migrations\\20250512174723_populatabela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "APIEstacionamentoContext.cs",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
+              "RelativeDocumentMoniker": "APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
+              "RelativeToolTip": "APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:54:12.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "APIEstacionamento\\Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Controllers\\ValuesController.cs*",
+              "RelativeToolTip": "APIEstacionamento\\Controllers\\ValuesController.cs*",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwFAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:52:22.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Carro.cs",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Models\\Carro.cs",
+              "RelativeDocumentMoniker": "APIEstacionamento\\Models\\Carro.cs",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Models\\Carro.cs",
+              "RelativeToolTip": "APIEstacionamento\\Models\\Carro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:44:47.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TipoCombustivel.cs",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Models\\TipoCombustivel.cs",
+              "RelativeDocumentMoniker": "APIEstacionamento\\Models\\TipoCombustivel.cs",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Models\\TipoCombustivel.cs",
+              "RelativeToolTip": "APIEstacionamento\\Models\\TipoCombustivel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:40:01.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250512174723_PopulaTabela.cs",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Migrations\\20250512174723_PopulaTabela.cs",
+              "RelativeDocumentMoniker": "APIEstacionamento\\Migrations\\20250512174723_PopulaTabela.cs",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Migrations\\20250512174723_PopulaTabela.cs",
+              "RelativeToolTip": "APIEstacionamento\\Migrations\\20250512174723_PopulaTabela.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:47:29.915Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
