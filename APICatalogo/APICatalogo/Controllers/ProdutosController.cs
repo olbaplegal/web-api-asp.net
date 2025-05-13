@@ -7,7 +7,7 @@ namespace APICatalogo.Controllers;
 
 [Route("[controller]")]//rota vai ser definida usando apenas o nome do controlador
 [ApiController]
-public class ProdutosController : Controller
+public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
 {
     private readonly AppDbContext _context;
 

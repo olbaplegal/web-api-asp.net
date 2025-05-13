@@ -2,10 +2,10 @@
 
 public enum TipoCombustivel
 {
-    Alcool,
-    Gasolina,
-    Diesel,
-    Biosiesel,
-    Eletrico,
-    Hidrogenio
+    Alcool = 1,
+    Gasolina = 2,
+    Diesel = 3,
+    Biosiesel = 4,
+    Eletrico = 5,
+    Hidrogenio = 6
 }
