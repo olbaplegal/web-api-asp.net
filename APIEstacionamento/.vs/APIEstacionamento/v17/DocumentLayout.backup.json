@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\dev\\web-api\\APIEstacionamento\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\controllers\\estacionamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\controllers\\estacionamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\migrations\\apiestacionamentocontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\migrations\\apiestacionamentocontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|solutionrelative:apiestacionamento\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BB97F31-E268-4253-A5C7-828A58D722F1}|APIEstacionamento\\APIEstacionamento.csproj|c:\\dev\\web-api\\apiestacionamento\\apiestacionamento\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,48 +56,76 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "APIEstacionamentoContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Migrations\\APIEstacionamentoContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "APIEstacionamento\\Migrations\\APIEstacionamentoContextModelSnapshot.cs",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Migrations\\APIEstacionamentoContextModelSnapshot.cs",
+              "RelativeToolTip": "APIEstacionamento\\Migrations\\APIEstacionamentoContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T21:32:29.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\appsettings.json",
+              "RelativeDocumentMoniker": "APIEstacionamento\\appsettings.json",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\appsettings.json",
+              "RelativeToolTip": "APIEstacionamento\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-14T21:32:22.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Program.cs",
               "RelativeDocumentMoniker": "APIEstacionamento\\Program.cs",
               "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Program.cs",
               "RelativeToolTip": "APIEstacionamento\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T23:07:04.068Z"
+              "WhenOpened": "2025-05-12T23:07:04.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "APIEstacionamentoContext.cs",
               "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
               "RelativeDocumentMoniker": "APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
               "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
               "RelativeToolTip": "APIEstacionamento\\Context\\APIEstacionamentoContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T17:54:12.102Z"
+              "WhenOpened": "2025-05-12T17:54:12.102Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ValuesController.cs",
-              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Controllers\\ValuesController.cs",
-              "RelativeDocumentMoniker": "APIEstacionamento\\Controllers\\ValuesController.cs",
-              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Controllers\\ValuesController.cs",
-              "RelativeToolTip": "APIEstacionamento\\Controllers\\ValuesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Title": "EstacionamentoController.cs",
+              "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Controllers\\EstacionamentoController.cs",
+              "RelativeDocumentMoniker": "APIEstacionamento\\Controllers\\EstacionamentoController.cs",
+              "ToolTip": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Controllers\\EstacionamentoController.cs",
+              "RelativeToolTip": "APIEstacionamento\\Controllers\\EstacionamentoController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwBMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T17:52:22.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Carro.cs",
               "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Models\\Carro.cs",
               "RelativeDocumentMoniker": "APIEstacionamento\\Models\\Carro.cs",
@@ -101,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TipoCombustivel.cs",
               "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Models\\TipoCombustivel.cs",
               "RelativeDocumentMoniker": "APIEstacionamento\\Models\\TipoCombustivel.cs",
@@ -113,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "20250512174723_PopulaTabela.cs",
               "DocumentMoniker": "C:\\dev\\web-api\\APIEstacionamento\\APIEstacionamento\\Migrations\\20250512174723_PopulaTabela.cs",
               "RelativeDocumentMoniker": "APIEstacionamento\\Migrations\\20250512174723_PopulaTabela.cs",

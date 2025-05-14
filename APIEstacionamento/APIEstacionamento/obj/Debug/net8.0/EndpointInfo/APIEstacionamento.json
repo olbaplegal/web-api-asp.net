@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/Values": {
+    "/Estacionamento": {
       "get": {
         "tags": [
-          "Values"
+          "Estacionamento"
         ],
         "responses": {
           "200": {
@@ -44,7 +44,7 @@
       },
       "post": {
         "tags": [
-          "Values"
+          "Estacionamento"
         ],
         "requestBody": {
           "content": {
@@ -72,10 +72,10 @@
         }
       }
     },
-    "/Values/{id}": {
+    "/Estacionamento/{id}": {
       "get": {
         "tags": [
-          "Values"
+          "Estacionamento"
         ],
         "operationId": "ObterProduto",
         "parameters": [
@@ -114,7 +114,7 @@
       },
       "put": {
         "tags": [
-          "Values"
+          "Estacionamento"
         ],
         "parameters": [
           {
@@ -154,7 +154,7 @@
       },
       "delete": {
         "tags": [
-          "Values"
+          "Estacionamento"
         ],
         "parameters": [
           {

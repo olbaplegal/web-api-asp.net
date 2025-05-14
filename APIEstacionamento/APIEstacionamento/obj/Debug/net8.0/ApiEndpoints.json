@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "APIEstacionamento.Controllers.ValuesController",
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
     "Method": "Get",
-    "RelativePath": "Values",
+    "RelativePath": "Estacionamento",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "APIEstacionamento.Controllers.ValuesController",
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
     "Method": "Post",
-    "RelativePath": "Values",
+    "RelativePath": "Estacionamento",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -36,9 +36,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIEstacionamento.Controllers.ValuesController",
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
     "Method": "Get",
-    "RelativePath": "Values/{id}",
+    "RelativePath": "Estacionamento/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -63,9 +63,9 @@
     "EndpointName": "ObterProduto"
   },
   {
-    "ContainingType": "APIEstacionamento.Controllers.ValuesController",
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
     "Method": "Put",
-    "RelativePath": "Values/{id}",
+    "RelativePath": "Estacionamento/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -84,9 +84,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIEstacionamento.Controllers.ValuesController",
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
     "Method": "Delete",
-    "RelativePath": "Values/{id}",
+    "RelativePath": "Estacionamento/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

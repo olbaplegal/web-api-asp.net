@@ -9,5 +9,5 @@ public class APIEstacionamentoContext : DbContext
     {
     }
 
-    public DbSet<Carro> Categorias { get; set; } // ajeitar o context depois
+    public DbSet<Carro> Carros { get; set; } // ajeitar o context depois
 }

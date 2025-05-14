@@ -8,11 +8,11 @@ namespace APIEstacionamento.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-public class ValuesController : ControllerBase
+public class EstacionamentoController : ControllerBase
 {
     private readonly APIEstacionamentoContext _context;
 
-    public ValuesController(APIEstacionamentoContext context)
+    public EstacionamentoController(APIEstacionamentoContext context)
     {
         _context = context;
     }
@@ -20,7 +20,7 @@ public class ValuesController : ControllerBase
     [HttpGet]
     public ActionResult<IEnumerable<Carro>> Get()
     {
-        var carros = _context.Categorias.ToList(); //trocar o Categorias depois de ajeitar o context
+        var carros = _context.Carros.ToList(); //trocar o Categorias depois de ajeitar o context
         if(carros is null)
         {
             return NotFound("Carros não encontrados");
@@ -31,7 +31,7 @@ public class ValuesController : ControllerBase
     [HttpGet("{id:int}", Name="ObterProduto")]
     public ActionResult<Carro> Get(int id)
     {
-        var carro = _context.Categorias.FirstOrDefault(p => p.CarroId == id); // id do carro tem que ser igual ao id do request
+        var carro = _context.Carros.FirstOrDefault(p => p.CarroId == id); // id do carro tem que ser igual ao id do request
         if (carro == null) 
         {
             return NotFound("Carro não encontrado");
@@ -47,7 +47,7 @@ public class ValuesController : ControllerBase
             return BadRequest();
         }
 
-        _context.Categorias.Add(carro);
+        _context.Carros.Add(carro);
         _context.SaveChanges();
         return new CreatedAtRouteResult("ObterProduto", 
             new { id = carro.CarroId}, carro);
@@ -70,12 +70,12 @@ public class ValuesController : ControllerBase
     [HttpDelete("{id:int}")]
     public ActionResult Delete(int id)
     {
-        var carro = _context.Categorias.FirstOrDefault(p=>p.CarroId == id);
+        var carro = _context.Carros.FirstOrDefault(p=>p.CarroId == id);
         if(carro is null)
         {
             return NotFound("carro não encontrado...");
         }
-        _context.Categorias.Remove(carro);
+        _context.Carros.Remove(carro);
         _context.SaveChanges();
 
         return Ok(carro);

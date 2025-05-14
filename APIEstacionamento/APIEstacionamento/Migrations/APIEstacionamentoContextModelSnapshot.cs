@@ -59,7 +59,7 @@ namespace APIEstacionamento.Migrations
 
                     b.HasKey("CarroId");
 
-                    b.ToTable("Carros");
+                    b.ToTable("Carros", (string)null);
                 });
 #pragma warning restore 612, 618
         }
