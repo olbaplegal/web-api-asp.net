@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
-    "Method": "Get",
+    "Method": "GetAll",
     "RelativePath": "Estacionamento",
     "HttpMethod": "GET",
     "IsController": true,
@@ -37,7 +37,7 @@
   },
   {
     "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
-    "Method": "Get",
+    "Method": "GetById",
     "RelativePath": "Estacionamento/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -98,5 +98,84 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
+    "Method": "UpdateByCpf",
+    "RelativePath": "Estacionamento/AtualizarCombustivelComCpf",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cpf",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "combustivel",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
+    "Method": "AtualizarCarroComId",
+    "RelativePath": "Estacionamento/AtualizarComId",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carro",
+        "Type": "APIEstacionamento.Models.Carro",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
+    "Method": "AtualizarCarroSemId",
+    "RelativePath": "Estacionamento/AtualizarSemId",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carro",
+        "Type": "APIEstacionamento.Models.Carro",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
+    "Method": "GetByCpf",
+    "RelativePath": "Estacionamento/BuscaSomenteCpf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cpf",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIEstacionamento.Models.Carro",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
