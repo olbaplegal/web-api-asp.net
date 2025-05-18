@@ -154,6 +154,32 @@
   },
   {
     "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
+    "Method": "GetByPlacaRenavanOrCpf",
+    "RelativePath": "Estacionamento/BuscaPlacaRenavanCpf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Dado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[APIEstacionamento.Models.Carro, APIEstacionamento, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIEstacionamento.Controllers.EstacionamentoController",
     "Method": "GetByCpf",
     "RelativePath": "Estacionamento/BuscaSomenteCpf",
     "HttpMethod": "GET",

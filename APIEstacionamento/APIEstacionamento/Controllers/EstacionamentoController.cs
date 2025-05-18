@@ -52,7 +52,21 @@ public class EstacionamentoController : ControllerBase
 
         return carro;
     }
-    // precisa tratamento
+
+    [HttpGet("BuscaPlacaRenavanCpf")]
+    public ActionResult<List<Carro>> GetByPlacaRenavanOrCpf(String Dado)
+    {
+
+        var carro = _context.Carros.Where(c => c.Placa == Dado || c.Renavan == Dado || c.Cpf == Dado).ToList();
+
+
+        if(carro is null)
+        {
+            return BadRequest("Carro não encontrado...");
+        }
+
+        return carro;
+    }
 
     [HttpPost]
     public ActionResult Post(Carro carro)
