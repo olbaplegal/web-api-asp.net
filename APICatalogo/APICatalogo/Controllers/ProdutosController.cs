@@ -32,7 +32,49 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
         return produtos;
     }
 
-    [HttpGet("{valor:alpha:length(5)}")] 
+    [HttpGet]
+    public string GetString()
+    {
+        var produto = _context.Produtos.FirstOrDefault();
+        return ("hello world");
+    }
+
+    [HttpGet]
+    public Produto GetProduto()
+    {
+        var produto = _context.Produtos.FirstOrDefault();
+        // não é possivel returnar um not found 
+        //if (produto is null){
+        //    return NotFound();
+        //}
+        return produto;
+    }
+
+    [HttpGet]
+    public IActionResult GetIActionResult()
+    {
+        var produto = _context.Produtos.FirstOrDefault();
+        if (produto is null)
+        {
+            return NotFound(); // neste caso o notfound é do tipo IActionResult
+        }
+        return Ok(produto); // ok é um IAcitonResult tbm 
+    }
+
+    [HttpGet]
+    // ActionResult<T> tem maior flexibilidade pois da para retornar o produto ou os tipos ActionResults
+    public ActionResult<Produto> GetIActionResultDeT()
+    {
+        var produto = _context.Produtos.FirstOrDefault();
+        if (produto is null)
+        {
+            return NotFound();
+        }
+        return produto;
+
+    }
+
+        [HttpGet("{valor:alpha:length(5)}")] 
     // only accept values of A to Z
     // alpha numerics of lenth == 5
     public ActionResult<Produto> Get2(string valor)
