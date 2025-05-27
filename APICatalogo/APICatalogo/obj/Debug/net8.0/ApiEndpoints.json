@@ -46,12 +46,12 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
-        "Name": "nome",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -103,32 +103,6 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "APICatalogo.Controllers.ProdutosController",
-    "Method": "Get2",
-    "RelativePath": "api/Produtos/{valor}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "valor",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "APICatalogo.Models.Produto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "APICatalogo.Controllers.ProdutosController",

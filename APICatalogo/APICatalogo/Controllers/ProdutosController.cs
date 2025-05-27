@@ -1,6 +1,7 @@
 ﻿using APICatalogo.Context;
 using APICatalogo.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
 namespace APICatalogo.Controllers;
@@ -32,71 +33,72 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
         return produtos;
     }
 
-    [HttpGet]
-    public string GetString()
-    {
-        var produto = _context.Produtos.FirstOrDefault();
-        return ("hello world");
-    }
+    //[HttpGet]
+    //public string GetString()
+    //{
+    //    var produto = _context.Produtos.FirstOrDefault();
+    //    return ("hello world");
+    //}
 
-    [HttpGet]
-    public Produto GetProduto()
-    {
-        var produto = _context.Produtos.FirstOrDefault();
+    //[HttpGet]
+    //public Produto GetProduto()
+    //{
+    //     var produto = _context.Produtos.FirstOrDefault();
         // não é possivel returnar um not found 
         //if (produto is null){
         //    return NotFound();
         //}
-        return produto;
-    }
+    //    return produto;
+    //}
 
-    [HttpGet]
-    public IActionResult GetIActionResult()
-    {
-        var produto = _context.Produtos.FirstOrDefault();
-        if (produto is null)
-        {
-            return NotFound(); // neste caso o notfound é do tipo IActionResult
-        }
-        return Ok(produto); // ok é um IAcitonResult tbm 
-    }
+    //[HttpGet]
+    //public IActionResult GetIActionResult()
+    //{
+    //    var produto = _context.Produtos.FirstOrDefault();
+    //    if (produto is null)
+    //    {
+    //        return NotFound(); // neste caso o notfound é do tipo IActionResult
+    //    }
+    //    return Ok(produto); // ok é um IAcitonResult tbm 
+    //}
 
-    [HttpGet]
+    //[HttpGet]
     // ActionResult<T> tem maior flexibilidade pois da para retornar o produto ou os tipos ActionResults
-    public ActionResult<Produto> GetIActionResultDeT()
-    {
-        var produto = _context.Produtos.FirstOrDefault();
-        if (produto is null)
-        {
-            return NotFound();
-        }
-        return produto;
+    //public ActionResult<Produto> GetIActionResultDeT()
+    //{
+    //    var produto = _context.Produtos.FirstOrDefault();
+    //    if (produto is null)
+    //    {
+    //        return NotFound();
+    //    }
+    //    return produto;
 
-    }
+    //}
 
-        [HttpGet("{valor:alpha:length(5)}")] 
     // only accept values of A to Z
     // alpha numerics of lenth == 5
-    public ActionResult<Produto> Get2(string valor)
-    {
-        var teste = valor;
-        return _context.Produtos.FirstOrDefault();
-    }
+    //[HttpGet("{valor:alpha:length(5)}")] 
+    //public ActionResult<Produto> Get2(string valor)
+    //{
+    //    var teste = valor;
+    //    return _context.Produtos.FirstOrDefault();
+    //}
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Produto>>> GetAsync()
-    {
-        return await _context.Produtos.AsNoTracking().ToListAsync();
-    }
+    //[HttpGet]
+    //public async Task<ActionResult<IEnumerable<Produto>>> GetAsync()
+    //{
+    //    return await _context.Produtos.AsNoTracking().ToListAsync();
+    //}
 
     // GET por ID
     // api/produtos/id
     //[HttpGet("{id}/{nome=Caderno}", Name="ObterProduto")]
     //public ActionResult<Produto> Get(int id, string nome)
+    //public async Task<ActionResult<Produto>> Get(int id,[BindRequired] string nome) // exige que o nome seja inserio na cadeia de consulta
     [HttpGet("{id:int:min(1)}", Name = "ObterProduto")]
-    public ActionResult<Produto> Get(int id, string nome)
+    public async Task<ActionResult<Produto>> Get([FromQuery]int id) // alterando o comportamento padrão, o Id vai ser recebido da cadeia de consulta
     {
-        var parametro = nome;
+        //var nomeProduto = nome;
 
         var produto = _context.Produtos.FirstOrDefault(p=> p.ProdutoId == id);
         if (produto == null)
@@ -152,3 +154,4 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
 
 // fontes
 // https://learn.microsoft.com/pt-br/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
+// https://learn.microsoft.com/pt-br/aspnet/core/mvc/models/model-binding?view=aspnetcore-9.0
