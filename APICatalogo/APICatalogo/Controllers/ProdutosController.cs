@@ -83,6 +83,12 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
         return _context.Produtos.FirstOrDefault();
     }
 
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Produto>>> GetAsync()
+    {
+        return await _context.Produtos.AsNoTracking().ToListAsync();
+    }
+
     // GET por ID
     // api/produtos/id
     //[HttpGet("{id}/{nome=Caderno}", Name="ObterProduto")]
