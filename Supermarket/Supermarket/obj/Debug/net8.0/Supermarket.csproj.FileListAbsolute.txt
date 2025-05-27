@@ -1,0 +1,15 @@
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.AssemblyInfoInputs.cache
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.AssemblyInfo.cs
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.csproj.CoreCompileInputs.cache
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.sourcelink.json
+C:\dev\web-api\Supermarket\Supermarket\bin\Debug\net8.0\Supermarket.exe
+C:\dev\web-api\Supermarket\Supermarket\bin\Debug\net8.0\Supermarket.deps.json
+C:\dev\web-api\Supermarket\Supermarket\bin\Debug\net8.0\Supermarket.runtimeconfig.json
+C:\dev\web-api\Supermarket\Supermarket\bin\Debug\net8.0\Supermarket.dll
+C:\dev\web-api\Supermarket\Supermarket\bin\Debug\net8.0\Supermarket.pdb
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.dll
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\refint\Supermarket.dll
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.pdb
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\Supermarket.genruntimeconfig.cache
+C:\dev\web-api\Supermarket\Supermarket\obj\Debug\net8.0\ref\Supermarket.dll

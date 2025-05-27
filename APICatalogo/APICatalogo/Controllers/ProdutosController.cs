@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace APICatalogo.Controllers;
-
-[Route("[controller]")]//rota vai ser definida usando apenas o nome do controlador
+// novo route default
+[Route("api/[controller]")] // produtos 
 [ApiController]
 public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
 {
@@ -16,8 +16,12 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
         _context = context;
     }
 
-    //criando método action
-    [HttpGet]
+    // criando método action
+    // api/produtos
+    [HttpGet] // rout default
+    [HttpGet("primeiro")] // api/produtos/primeiro
+    [HttpGet("teste")] // api/produtos/teste
+    [HttpGet("/primeiro")] // /primeiro
     public ActionResult<IEnumerable<Produto>> Get()
     {
         var produtos = _context.Produtos.ToList();
@@ -28,10 +32,24 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
         return produtos;
     }
 
-    //GET por ID
-    [HttpGet("{id:int}", Name="ObterProduto")]
-    public ActionResult<Produto> Get(int id)
+    [HttpGet("{valor:alpha:length(5)}")] 
+    // only accept values of A to Z
+    // alpha numerics of lenth == 5
+    public ActionResult<Produto> Get2(string valor)
     {
+        var teste = valor;
+        return _context.Produtos.FirstOrDefault();
+    }
+
+    // GET por ID
+    // api/produtos/id
+    //[HttpGet("{id}/{nome=Caderno}", Name="ObterProduto")]
+    //public ActionResult<Produto> Get(int id, string nome)
+    [HttpGet("{id:int:min(1)}", Name = "ObterProduto")]
+    public ActionResult<Produto> Get(int id, string nome)
+    {
+        var parametro = nome;
+
         var produto = _context.Produtos.FirstOrDefault(p=> p.ProdutoId == id);
         if (produto == null)
         {
@@ -83,3 +101,6 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
         return Ok(produto);
     }
 }
+
+// fontes
+// https://learn.microsoft.com/pt-br/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
