@@ -275,6 +275,63 @@
     ]
   },
   {
+    "ContainingType": "APICatalogo.Controllers.CategoriasController",
+    "Method": "GetSaudacaoSemFromServices",
+    "RelativePath": "Categorias/SemUsarFromServices/{nome}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meuServico",
+        "Type": "APICatalogo.Services.IMeuServico",
+        "IsRequired": true
+      },
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APICatalogo.Controllers.CategoriasController",
+    "Method": "GetSaudacaoFromServices",
+    "RelativePath": "Categorias/UsandoFromServices/{nome}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APICatalogo.Controllers.ProdutosController",
     "Method": "Get",
     "RelativePath": "primeiro",
