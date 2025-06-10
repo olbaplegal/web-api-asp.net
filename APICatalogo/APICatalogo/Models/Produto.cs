@@ -12,7 +12,7 @@ public class Produto
     public int ProdutoId { get; set; }
     [Required]
     [StringLength(80)]
-    [PrimeiraLetraMaiuscula]
+    [PrimeiraLetraMaiuscula] // validação personalizada via attribute
     public string? Nome { get; set; }
     [Required]
     [StringLength(300)]
