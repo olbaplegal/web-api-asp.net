@@ -30,7 +30,7 @@ public class Produto : IValidatableObject
     public Categoria? Categoria { get; set; }
 
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
-    {
+    { 
         if (!string.IsNullOrEmpty(this.Nome))
         {
             var primeiraLetra = this.Nome[0].ToString();
