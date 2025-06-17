@@ -4,6 +4,7 @@ using APICatalogo.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
 
 namespace APICatalogo.Controllers
 {
@@ -12,10 +13,12 @@ namespace APICatalogo.Controllers
     public class CategoriasController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IConfiguration _configuration; // criando Iconfiguration privada somente leitura para que não seja alterada.
 
-        public CategoriasController(AppDbContext context)
+        public CategoriasController(AppDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -33,6 +36,17 @@ namespace APICatalogo.Controllers
             }
             //tratando erros nos métodos
             
+        }
+
+        [HttpGet("LerArquivoConfiguracao")]
+        public string GetValores()
+        {
+            var valor1 = _configuration ["chave1"];
+            var valor2 = _configuration ["chave2"];
+
+            var secao1 = _configuration ["secao1:chave2"];
+
+            return $"Chave1 = {valor1}\n Chave2 = {valor2}\n Secao1:Chave2 = {secao1}";
         }
 
         [HttpGet("UsandoFromServices/{nome}")] // usando from services
