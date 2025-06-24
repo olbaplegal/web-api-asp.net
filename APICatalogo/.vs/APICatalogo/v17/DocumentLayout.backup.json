@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\filter\\apiloggingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\filter\\apiloggingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,14 +39,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApiLoggingFilter.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Filter\\ApiLoggingFilter.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Filter\\ApiLoggingFilter.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Filter\\ApiLoggingFilter.cs",
-              "RelativeToolTip": "APICatalogo\\Filter\\ApiLoggingFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "APICatalogo\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Properties\\launchSettings.json",
+              "RelativeToolTip": "APICatalogo\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T21:29:47.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProdutosController.cs",
+              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T20:46:20.573Z",
+              "WhenOpened": "2025-06-24T21:23:05.939Z",
               "EditorCaption": ""
             },
             {
@@ -57,22 +70,9 @@
               "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriasController.cs",
               "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs*",
               "RelativeToolTip": "APICatalogo\\Controllers\\CategoriasController.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowCsAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T10:51:08.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Program.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Program.cs",
-              "RelativeToolTip": "APICatalogo\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T10:50:12.866Z",
+              "WhenOpened": "2025-06-24T21:22:51.251Z",
               "EditorCaption": ""
             }
           ]

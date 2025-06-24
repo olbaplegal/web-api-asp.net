@@ -9,17 +9,19 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace APICatalogo.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class CategoriasController : ControllerBase
     {
         private readonly AppDbContext _context;
         private readonly IConfiguration _configuration; // criando Iconfiguration privada somente leitura para que não seja alterada.
+        private readonly ILogger _logger;
 
-        public CategoriasController(AppDbContext context, IConfiguration configuration)
+        public CategoriasController(AppDbContext context, IConfiguration configuration, ILogger<CategoriasController> logger)
         {
             _context = context;
             _configuration = configuration;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -91,6 +93,7 @@ namespace APICatalogo.Controllers
         [HttpGet("produtos")]
         public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
         {
+            _logger.LogInformation($"============== GET api/categorias/produtos =============");
             //return _context.Categorias.Include(p=>p.Produtos).ToList();
             return _context.Categorias.Include(p => p.Produtos).Where(c => c.CategoriaId <= 5).ToList(); // nunca retornar todos os objetos, sempre filtrar!!
         }

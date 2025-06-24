@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/Categorias": {
+    "/api/Categorias": {
       "get": {
         "tags": [
           "Categorias"
@@ -72,7 +72,7 @@
         }
       }
     },
-    "/Categorias/GetAllCategorias": {
+    "/api/Categorias/GetAllCategorias": {
       "get": {
         "tags": [
           "Categorias"
@@ -110,7 +110,7 @@
         }
       }
     },
-    "/Categorias/LerArquivoConfiguracao": {
+    "/api/Categorias/LerArquivoConfiguracao": {
       "get": {
         "tags": [
           "Categorias"
@@ -139,7 +139,7 @@
         }
       }
     },
-    "/Categorias/UsandoFromServices/{nome}": {
+    "/api/Categorias/UsandoFromServices/{nome}": {
       "get": {
         "tags": [
           "Categorias"
@@ -178,7 +178,7 @@
         }
       }
     },
-    "/Categorias/SemUsarFromServices/{nome}": {
+    "/api/Categorias/SemUsarFromServices/{nome}": {
       "get": {
         "tags": [
           "Categorias"
@@ -236,7 +236,7 @@
         }
       }
     },
-    "/Categorias/{id}": {
+    "/api/Categorias/{id}": {
       "get": {
         "tags": [
           "Categorias"
@@ -355,7 +355,7 @@
         }
       }
     },
-    "/Categorias/produtos": {
+    "/api/Categorias/produtos": {
       "get": {
         "tags": [
           "Categorias"
