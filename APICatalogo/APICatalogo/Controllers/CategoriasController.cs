@@ -1,4 +1,5 @@
 ﻿using APICatalogo.Context;
+using APICatalogo.Filter;
 using APICatalogo.Models;
 using APICatalogo.Services;
 using Microsoft.AspNetCore.Http;
@@ -36,6 +37,13 @@ namespace APICatalogo.Controllers
             }
             //tratando erros nos métodos
             
+        }
+
+        [HttpGet("GetAllCategorias")]
+        [ServiceFilter(typeof(ApiLoggingFilter))]
+        public ActionResult<IEnumerable<Categoria>> GetAllCategorias()
+        {
+            return _context.Categorias.ToList();
         }
 
         [HttpGet("LerArquivoConfiguracao")]

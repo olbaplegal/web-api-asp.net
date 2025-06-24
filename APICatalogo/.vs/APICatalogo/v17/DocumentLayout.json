@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\filter\\apiloggingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\filter\\apiloggingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +38,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiLoggingFilter.cs",
+              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Filter\\ApiLoggingFilter.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Filter\\ApiLoggingFilter.cs",
+              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Filter\\ApiLoggingFilter.cs",
+              "RelativeToolTip": "APICatalogo\\Filter\\ApiLoggingFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T20:46:20.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CategoriasController.cs",
               "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs",
               "RelativeDocumentMoniker": "APICatalogo\\Controllers\\CategoriasController.cs",
               "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\CategoriasController.cs*",
               "RelativeToolTip": "APICatalogo\\Controllers\\CategoriasController.cs*",
-              "ViewState": "AgIAACkAAAAAAAAAAAA9wEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T10:51:08.332Z",
               "EditorCaption": ""
@@ -53,7 +70,7 @@
               "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
               "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Program.cs",
               "RelativeToolTip": "APICatalogo\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T10:50:12.866Z",
               "EditorCaption": ""

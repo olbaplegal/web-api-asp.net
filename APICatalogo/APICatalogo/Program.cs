@@ -1,5 +1,6 @@
 using APICatalogo.Context;
 using APICatalogo.Extensions;
+using APICatalogo.Filter;
 using APICatalogo.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +28,8 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.DisableImplicitFromServicesParameters = true;
 });
+
+builder.Services.AddScoped<ApiLoggingFilter>();
 
 var app = builder.Build();
 
