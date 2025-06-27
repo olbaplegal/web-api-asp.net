@@ -72,44 +72,6 @@
         }
       }
     },
-    "/api/Categorias/GetAllCategorias": {
-      "get": {
-        "tags": [
-          "Categorias"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Categoria"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Categoria"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Categoria"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Categorias/LerArquivoConfiguracao": {
       "get": {
         "tags": [
@@ -348,44 +310,6 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Categoria"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Categorias/produtos": {
-      "get": {
-        "tags": [
-          "Categorias"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Categoria"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Categoria"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Categoria"
-                  }
                 }
               }
             }
@@ -706,13 +630,6 @@
             "maxLength": 300,
             "minLength": 0,
             "type": "string"
-          },
-          "produtos": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Produto"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false

@@ -151,7 +151,3 @@ public class ProdutosController : Microsoft.AspNetCore.Mvc.Controller
         return Ok(produto);
     }
 }
-
-// fontes
-// https://learn.microsoft.com/pt-br/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
-// https://learn.microsoft.com/pt-br/aspnet/core/mvc/models/model-binding?view=aspnetcore-9.0

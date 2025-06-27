@@ -1,6 +1,7 @@
 ﻿using APICatalogo.Context;
 using APICatalogo.Filter;
 using APICatalogo.Models;
+using APICatalogo.Repositories;
 using APICatalogo.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,13 +14,13 @@ namespace APICatalogo.Controllers
     [ApiController]
     public class CategoriasController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly ICategoriaRepository _repository;
         private readonly IConfiguration _configuration; // criando Iconfiguration privada somente leitura para que não seja alterada.
         private readonly ILogger _logger;
 
-        public CategoriasController(AppDbContext context, IConfiguration configuration, ILogger<CategoriasController> logger)
+        public CategoriasController(ICategoriaRepository repository, IConfiguration configuration, ILogger<CategoriasController> logger)
         {
-            _context = context;
+            _repository = repository;
             _configuration = configuration;
             _logger = logger;
         }
@@ -27,25 +28,8 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            try
-            {
-                throw new DataMisalignedException();
-                //return _context.Categorias.AsNoTracking().ToList(); //AsNoTracking para melhorar o desempenho da consulta mas só se o retorno não for alterado
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Ocorreu um problema ao tratar a sua solicitação..");
-            }
-            //tratando erros nos métodos
-            
-        }
-
-        [HttpGet("GetAllCategorias")]
-        [ServiceFilter(typeof(ApiLoggingFilter))]
-        public ActionResult<IEnumerable<Categoria>> GetAllCategorias()
-        {
-            return _context.Categorias.ToList();
+            var categorias = _repository.GetCategorias();
+            return Ok(categorias);
         }
 
         [HttpGet("LerArquivoConfiguracao")]
@@ -74,41 +58,29 @@ namespace APICatalogo.Controllers
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
+            var categoria = _repository.GetCategoria(id);
 
-            //throw new Exception("Exceção ao retornar a categoria pelo Id");
-            string[] teste = null;
-            if(teste.Length > 0)
+            if(categoria is null)
             {
-
+                _logger.LogWarning($"Categoria com id= {id} não encontrada...");
+                return NotFound($"Categoria com id= {id} não encontrada...");
             }
 
-            var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            if(categoria == null)
-            {
-                return NotFound("Categoria não encontrada...");
-            }
             return Ok(categoria);
-        }
-
-        [HttpGet("produtos")]
-        public ActionResult<IEnumerable<Categoria>> GetCategoriasProdutos()
-        {
-            _logger.LogInformation($"============== GET api/categorias/produtos =============");
-            //return _context.Categorias.Include(p=>p.Produtos).ToList();
-            return _context.Categorias.Include(p => p.Produtos).Where(c => c.CategoriaId <= 5).ToList(); // nunca retornar todos os objetos, sempre filtrar!!
         }
 
         [HttpPost]
         public ActionResult Post(Categoria categoria)
         {
             if (categoria is null)
-                return BadRequest();
+            {
+                _logger.LogWarning($"Dados inválidos...");
+                return BadRequest($"Dados inválidos...");
+            }
 
-            _context.Categorias.Add(categoria);
-            _context.SaveChanges();
+            var categoriaCriada = _repository.Create(categoria);
 
-            return new CreatedAtRouteResult("ObterCategoria",
-                new {id = categoria.CategoriaId}, categoria); 
+            return new CreatedAtRouteResult("ObterCategoria", new { id = categoriaCriada.CategoriaId }, categoriaCriada);
         }
 
         [HttpPut("{id:int}")]
@@ -116,26 +88,26 @@ namespace APICatalogo.Controllers
         {
             if (id != categoria.CategoriaId)
             {
+                _logger.LogWarning($"Dados inválidos...");
                 return BadRequest();
             }
-            _context.Entry(categoria).State = EntityState.Modified; //só esse método usa o entityframeworkcore
-            _context.SaveChanges();
+            _repository.Update(categoria);
             return Ok(categoria);
         }
 
         [HttpDelete("{id:int}")]
-        public ActionResult<Categoria> Delete(int id) //porque alguns tem que abrir uma lista e outros não no ActionResult? esse pode simplificar mas a pergunta persiste
+        public ActionResult<Categoria> Delete(int id)
         {
-            var categoria = _context.Categorias.FirstOrDefault(p => p.CategoriaId == id);
-            
-            if(categoria == null)
+            var categoria = _repository.GetCategoria(id);
+
+            if(categoria is null)
             {
-                return NotFound();
+                _logger.LogWarning($"Categoria com id= {id} não encontrada...");
+                return NotFound($"Categoria com id= {id} não encontrada...");
             }
 
-            _context.Categorias.Remove(categoria);
-            _context.SaveChanges();
-            return Ok(categoria);
+            var categoriaExcluida = _repository.Delete(id);
+            return Ok(categoriaExcluida);
         }
     }
 }
