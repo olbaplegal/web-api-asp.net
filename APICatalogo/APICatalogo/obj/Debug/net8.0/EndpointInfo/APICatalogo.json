@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Categorias": {
+    "/Categorias": {
       "get": {
         "tags": [
           "Categorias"
@@ -72,133 +72,7 @@
         }
       }
     },
-    "/api/Categorias/LerArquivoConfiguracao": {
-      "get": {
-        "tags": [
-          "Categorias"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Categorias/UsandoFromServices/{nome}": {
-      "get": {
-        "tags": [
-          "Categorias"
-        ],
-        "parameters": [
-          {
-            "name": "nome",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Categorias/SemUsarFromServices/{nome}": {
-      "get": {
-        "tags": [
-          "Categorias"
-        ],
-        "parameters": [
-          {
-            "name": "nome",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/IMeuServico"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/IMeuServico"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/IMeuServico"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Categorias/{id}": {
+    "/Categorias/{id}": {
       "get": {
         "tags": [
           "Categorias"
@@ -317,10 +191,21 @@
         }
       }
     },
-    "/api/Produtos/primeiro": {
+    "/Produtos/produtos/{id}": {
       "get": {
         "tags": [
           "Produtos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -355,83 +240,7 @@
         }
       }
     },
-    "/api/Produtos/teste": {
-      "get": {
-        "tags": [
-          "Produtos"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Produto"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Produto"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Produto"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/primeiro": {
-      "get": {
-        "tags": [
-          "Produtos"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Produto"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Produto"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Produto"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Produtos": {
+    "/Produtos": {
       "get": {
         "tags": [
           "Produtos"
@@ -498,7 +307,7 @@
         }
       }
     },
-    "/api/Produtos/{id}": {
+    "/Produtos/{id}": {
       "get": {
         "tags": [
           "Produtos"
@@ -507,18 +316,11 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -632,10 +434,6 @@
             "type": "string"
           }
         },
-        "additionalProperties": false
-      },
-      "IMeuServico": {
-        "type": "object",
         "additionalProperties": false
       },
       "Produto": {

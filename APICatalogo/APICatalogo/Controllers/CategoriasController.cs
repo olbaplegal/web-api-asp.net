@@ -10,55 +10,31 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace APICatalogo.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CategoriasController : ControllerBase
     {
-        private readonly ICategoriaRepository _repository;
-        private readonly IConfiguration _configuration; // criando Iconfiguration privada somente leitura para que não seja alterada.
-        private readonly ILogger _logger;
+       
+        private readonly IRepository<Categoria> _repository;
+        private readonly ILogger<CategoriasController> _logger;
 
-        public CategoriasController(ICategoriaRepository repository, IConfiguration configuration, ILogger<CategoriasController> logger)
+        public CategoriasController(ICategoriaRepository repository, ILogger<CategoriasController> logger)
         {
-            _repository = repository;
-            _configuration = configuration;
             _logger = logger;
+            _repository = repository;
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            var categorias = _repository.GetCategorias();
+            var categorias = _repository.GetAll();
             return Ok(categorias);
-        }
-
-        [HttpGet("LerArquivoConfiguracao")]
-        public string GetValores()
-        {
-            var valor1 = _configuration ["chave1"];
-            var valor2 = _configuration ["chave2"];
-
-            var secao1 = _configuration ["secao1:chave2"];
-
-            return $"Chave1 = {valor1}\n Chave2 = {valor2}\n Secao1:Chave2 = {secao1}";
-        }
-
-        [HttpGet("UsandoFromServices/{nome}")] // usando from services
-        public ActionResult<string> GetSaudacaoFromServices([FromServices] IMeuServico meuServico, string nome)
-        {
-            return meuServico.Saudacao(nome);
-        }
-
-        [HttpGet("SemUsarFromServices/{nome}")] // sem usar from services
-        public ActionResult<string> GetSaudacaoSemFromServices(IMeuServico meuServico, string nome)
-        {
-            return meuServico.Saudacao(nome);
         }
 
         [HttpGet("{id:int}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Get(int id)
         {
-            var categoria = _repository.GetCategoria(id);
+            var categoria = _repository.Get(c=>c.CategoriaId == id);
 
             if(categoria is null)
             {
@@ -98,7 +74,7 @@ namespace APICatalogo.Controllers
         [HttpDelete("{id:int}")]
         public ActionResult<Categoria> Delete(int id)
         {
-            var categoria = _repository.GetCategoria(id);
+            var categoria = _repository.Get(c=>c.CategoriaId == id);
 
             if(categoria is null)
             {
@@ -106,7 +82,7 @@ namespace APICatalogo.Controllers
                 return NotFound($"Categoria com id= {id} não encontrada...");
             }
 
-            var categoriaExcluida = _repository.Delete(id);
+            var categoriaExcluida = _repository.Delete(categoria);
             return Ok(categoriaExcluida);
         }
     }

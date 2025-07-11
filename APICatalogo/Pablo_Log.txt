@@ -37,4 +37,131 @@ SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (0ms) [Parameters=[@
 SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
 FROM `Categorias` AS `c`
 WHERE `c`.`CategoriaId` = @__id_0
-LIMIT 1Warning : 0 : Categoria com id= 44 não encontrada...
+LIMIT 1Warning : 0 : Categoria com id= 44 não encontrada...Information : 14 : Now listening on: https://localhost:7038Information : 14 : Now listening on: http://localhost:5088Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Information : 14 : Now listening on: https://localhost:7038Information : 14 : Now listening on: http://localhost:5088Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Information : 14 : Now listening on: https://localhost:7038Information : 14 : Now listening on: http://localhost:5088Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Information : 14 : Now listening on: https://localhost:7038Information : 14 : Now listening on: http://localhost:5088Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Information : 14 : Now listening on: https://localhost:7038Information : 14 : Now listening on: http://localhost:5088Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Information : 14 : Now listening on: https://localhost:7038Information : 14 : Now listening on: http://localhost:5088Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoInformation : 20101 : Executed DbCommand (194ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (34ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`
+WHERE `p`.`ProdutoId` = @__id_0
+LIMIT 1Information : 20101 : Executed DbCommand (127ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE DATABASE `catalogodb`;Information : 20101 : Executed DbCommand (293ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;Information : 20101 : Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='catalogodb' AND TABLE_NAME='__EFMigrationsHistory';Information : 20101 : Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;Information : 20402 : Applying migration '20250508154442_MigracaoInicial'.Information : 20101 : Executed DbCommand (79ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;Information : 20101 : Executed DbCommand (263ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE `Categorias` (
+    `CategoriaId` int NOT NULL AUTO_INCREMENT,
+    `Nome` longtext CHARACTER SET utf8mb4 NULL,
+    `ImagemUrl` longtext CHARACTER SET utf8mb4 NULL,
+    CONSTRAINT `PK_Categorias` PRIMARY KEY (`CategoriaId`)
+) CHARACTER SET=utf8mb4;Information : 20101 : Executed DbCommand (396ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE `Produtos` (
+    `ProdutoId` int NOT NULL AUTO_INCREMENT,
+    `Nome` longtext CHARACTER SET utf8mb4 NULL,
+    `Descricao` longtext CHARACTER SET utf8mb4 NULL,
+    `Preco` decimal(65,30) NOT NULL,
+    `ImagemUrl` longtext CHARACTER SET utf8mb4 NULL,
+    `Estoque` float NOT NULL,
+    `DataCadastro` datetime(6) NOT NULL,
+    `CategoriaId` int NOT NULL,
+    CONSTRAINT `PK_Produtos` PRIMARY KEY (`ProdutoId`),
+    CONSTRAINT `FK_Produtos_Categorias_CategoriaId` FOREIGN KEY (`CategoriaId`) REFERENCES `Categorias` (`CategoriaId`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;Information : 20101 : Executed DbCommand (229ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX `IX_Produtos_CategoriaId` ON `Produtos` (`CategoriaId`);Information : 20101 : Executed DbCommand (66ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250508154442_MigracaoInicial', '8.0.13');Information : 20402 : Applying migration '20250509134557_AjusteTabelas'.Information : 20101 : Executed DbCommand (847ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `Preco` decimal(10,2) NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Produtos` SET `Nome` = ''
+WHERE `Nome` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (801ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `Nome` varchar(80) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Produtos` SET `ImagemUrl` = ''
+WHERE `ImagemUrl` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (904ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `ImagemUrl` varchar(300) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Produtos` SET `Descricao` = ''
+WHERE `Descricao` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (1,209ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `Descricao` varchar(300) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Categorias` SET `Nome` = ''
+WHERE `Nome` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (616ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Categorias` MODIFY COLUMN `Nome` varchar(80) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Categorias` SET `ImagemUrl` = ''
+WHERE `ImagemUrl` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (600ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Categorias` MODIFY COLUMN `ImagemUrl` varchar(300) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (67ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250509134557_AjusteTabelas', '8.0.13');Information : 20402 : Applying migration '20250509135039_PopulaCategorias'.Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Categorias(Nome, ImagemUrl) Values('Bebidas','bebidas.jpg')Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Categorias(Nome, ImagemUrl) Values('Lanches','lanches.jpg')Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Categorias(Nome, ImagemUrl) Values('Sobremesas','sobremesas.jpg')Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250509135039_PopulaCategorias', '8.0.13');Information : 20402 : Applying migration '20250509143059_PupulaProdutos'.Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Produtos(Nome,Descricao,Preco,ImagemUrl,Estoque,DataCadastro,CategoriaId)Values('Coca-Cola Diet','Refrigerante de Cola 350 ml','5.45','cocacola.jpg',50,now(),1)Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Produtos(Nome,Descricao,Preco,ImagemUrl,Estoque,DataCadastro,CategoriaId)Values('Lanche de Atum','Lanche de Atum com maionese',8.50,'atum.jpg',10,now(),2)Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Produtos(Nome,Descricao,Preco,ImagemUrl,Estoque,DataCadastro,CategoriaId)Values('Pudim 100 g','Pudim de leite condensado 100g',6.75,'pudim.jpg',20,now(),3)Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250509143059_PupulaProdutos', '8.0.13');Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoInformation : 20101 : Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoInformation : 20101 : Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (30ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`
+WHERE `p`.`ProdutoId` = @__id_0
+LIMIT 1Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoInformation : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Error : 1 : An unhandled exception has occurred while executing the request.Information : 20101 : Executed DbCommand (136ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (30ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`
+WHERE `p`.`ProdutoId` = @__id_0
+LIMIT 1Information : 20101 : Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`
+WHERE `p`.`ProdutoId` = @__id_0
+LIMIT 1Error : 1 : An unhandled exception has occurred while executing the request.Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoInformation : 20101 : Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`Information : 20101 : Executed DbCommand (22ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1Information : 20101 : Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 300), @p1='?' (Size = 80)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Categorias` (`ImagemUrl`, `Nome`)
+VALUES (@p0, @p1);
+SELECT `CategoriaId`
+FROM `Categorias`
+WHERE ROW_COUNT() = 1 AND `CategoriaId` = LAST_INSERT_ID();Information : 20101 : Executed DbCommand (176ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 300), @p1='?' (Size = 80)], CommandType='Text', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Categorias` SET `ImagemUrl` = @p0, `Nome` = @p1
+WHERE `CategoriaId` = @p2;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1Information : 20101 : Executed DbCommand (53ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Categorias`
+WHERE `CategoriaId` = @p0;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (Size = 300), @p3='?' (DbType = Single), @p4='?' (Size = 300), @p5='?' (Size = 80), @p6='?' (DbType = Decimal)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Produtos` (`CategoriaId`, `DataCadastro`, `Descricao`, `Estoque`, `ImagemUrl`, `Nome`, `Preco`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `ProdutoId`
+FROM `Produtos`
+WHERE ROW_COUNT() = 1 AND `ProdutoId` = LAST_INSERT_ID();Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`

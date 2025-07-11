@@ -224,4 +224,8 @@ D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\refint\APICatalo
 D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.pdb
 D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\APICatalogo.genruntimeconfig.cache
 D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\ref\APICatalogo.dll
+D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
