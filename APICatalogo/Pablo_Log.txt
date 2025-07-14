@@ -164,4 +164,6 @@ SELECT `ProdutoId`
 FROM `Produtos`
 WHERE ROW_COUNT() = 1 AND `ProdutoId` = LAST_INSERT_ID();Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
-FROM `Produtos` AS `p`
+FROM `Produtos` AS `p`Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoError : 1 : An unhandled exception has occurred while executing the request.Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoInformation : 20101 : Executed DbCommand (175ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
