@@ -229,3 +229,5 @@ D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\rjimswa.dswa.cac
 D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 D:\dev\web-api-asp.net\APICatalogo\APICatalogo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\dev\web-api-asp.net\APICatalogo\APICatalogo\bin\Debug\net8.0\AutoMapper.dll
+D:\dev\web-api-asp.net\APICatalogo\APICatalogo\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
