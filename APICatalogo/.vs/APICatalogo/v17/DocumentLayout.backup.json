@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\dev\\web-api-asp.net\\APICatalogo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\logging\\custumerlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\logging\\custumerlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\apicatalogo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\apicatalogo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\dtos\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,66 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustumerLogger.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Logging\\CustumerLogger.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Logging\\CustumerLogger.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Logging\\CustumerLogger.cs",
-              "RelativeToolTip": "APICatalogo\\Logging\\CustumerLogger.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAEwBkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T12:43:28.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "APICatalogo",
               "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
               "RelativeDocumentMoniker": "APICatalogo\\APICatalogo.csproj",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
-              "RelativeToolTip": "APICatalogo\\APICatalogo.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABVAAAAAAAAAA==",
+              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\APICatalogo.csproj*",
+              "RelativeToolTip": "APICatalogo\\APICatalogo.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-15T12:40:42.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProdutoDTO.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "RelativeToolTip": "APICatalogo\\DTOs\\ProdutoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T12:37:41.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProdutosController.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "APICatalogo\\Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T12:08:50.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Program.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Program.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Program.cs",
-              "RelativeToolTip": "APICatalogo\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAAC8AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T12:06:09.95Z",
+              "WhenOpened": "2025-07-16T10:30:44.138Z",
               "EditorCaption": ""
             }
           ]
