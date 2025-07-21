@@ -280,4 +280,10 @@ FROM `Categorias` AS `c`Information : 20101 : Executed DbCommand (0ms) [Paramete
 SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
 FROM `Categorias` AS `c`Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
-FROM `Categorias` AS `c`
+FROM `Categorias` AS `c`Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\dev\web-api-asp.net\APICatalogo\APICatalogoInformation : 20101 : Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`

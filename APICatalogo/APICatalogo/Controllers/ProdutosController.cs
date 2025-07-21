@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Newtonsoft.Json;
+using System.Numerics;
 
 namespace APICatalogo.Controllers;
 [Route("[controller]")]
@@ -36,11 +37,17 @@ public class ProdutosController : Controller
         return Ok(produtosDto);
     }
 
+
+
     [HttpGet("Pagination")]
     public ActionResult<IEnumerable<ProdutoDTO>> Get([FromQuery] ProdutosParameters produtosParameters)
     {
         var produtos = _uof.ProdutoRepository.GetProdutos(produtosParameters);
+        return ObterProdutos(produtos);
+    }
 
+    private ActionResult<IEnumerable<ProdutoDTO>> ObterProdutos(PagedList<Produto> produtos)
+    {
         var metadata = new
         {
             produtos.TotalCount,
@@ -52,10 +59,15 @@ public class ProdutosController : Controller
         };
 
         Response.Headers.Append("X-Pagination", JsonConvert.SerializeObject(metadata));
-
         var produtosDto = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
-
         return Ok(produtosDto);
+    }
+
+    [HttpGet("filter/preco/pagination")]
+    public ActionResult<IEnumerable<ProdutoDTO>> GetProdutosFilterPreco([FromQuery] ProdutosFiltroPreco produtoFilterPreco)
+    {
+        var produtos = _uof.ProdutoRepository.GetProdutosFiltroPreco(produtoFilterPreco);
+        return ObterProdutos(produtos);
     }
 
     [HttpGet]
