@@ -403,7 +403,7 @@
         }
       }
     },
-    "/Produtos/Pagination": {
+    "/Produtos/pagination": {
       "get": {
         "tags": [
           "Produtos"

@@ -131,7 +131,7 @@
   },
   {
     "ContainingType": "APICatalogo.Controllers.CategoriasController",
-    "Method": "GetCategoriasFiltradas",
+    "Method": "GetCategoriasFiltradasAsync",
     "RelativePath": "Categorias/filter/nome/pagination",
     "HttpMethod": "GET",
     "IsController": true,
@@ -400,8 +400,8 @@
   },
   {
     "ContainingType": "APICatalogo.Controllers.ProdutosController",
-    "Method": "Get",
-    "RelativePath": "Produtos/Pagination",
+    "Method": "GetProdutosFilterPreco",
+    "RelativePath": "Produtos/pagination",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

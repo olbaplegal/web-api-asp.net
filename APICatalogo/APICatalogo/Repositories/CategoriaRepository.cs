@@ -3,7 +3,7 @@ using APICatalogo.Models;
 using APICatalogo.Pagination;
 using Microsoft.EntityFrameworkCore;
 using X.PagedList;
-using X.PagedList.Extensions;
+using X.PagedList;
 
 namespace APICatalogo.Repositories;
 

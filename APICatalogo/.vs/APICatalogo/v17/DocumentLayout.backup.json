@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "D:\\dev\\web-api-asp.net\\APICatalogo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|d:\\dev\\web-api-asp.net\\apicatalogo\\apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31AE431E-D2E1-4942-B2EE-E39BA170B484}|APICatalogo\\APICatalogo.csproj|solutionrelative:apicatalogo\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,79 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\UnitOfWork.cs*",
-              "RelativeToolTip": "APICatalogo\\Repositories\\UnitOfWork.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
+              "Title": "CategoriaRepository.cs",
+              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\CategoriaRepository.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\CategoriaRepository.cs",
+              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\CategoriaRepository.cs*",
+              "RelativeToolTip": "APICatalogo\\Repositories\\CategoriaRepository.cs*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:42:55.423Z",
+              "WhenOpened": "2025-07-31T22:21:21.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\IUnitOfWork.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\IUnitOfWork.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "APICatalogo\\Controllers\\ProdutosController.cs",
+              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "APICatalogo\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:42:31.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProdutoRepository.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\ProdutoRepository.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\ProdutoRepository.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\ProdutoRepository.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\ProdutoRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA5wDEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:33:46.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IProdutoRepository.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\IProdutoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:32:56.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoriaRepository.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\CategoriaRepository.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\CategoriaRepository.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\CategoriaRepository.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\CategoriaRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:25:24.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICategoriaRepository.cs",
-              "DocumentMoniker": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\ICategoriaRepository.cs",
-              "RelativeDocumentMoniker": "APICatalogo\\Repositories\\ICategoriaRepository.cs",
-              "ToolTip": "D:\\dev\\web-api-asp.net\\APICatalogo\\APICatalogo\\Repositories\\ICategoriaRepository.cs",
-              "RelativeToolTip": "APICatalogo\\Repositories\\ICategoriaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:23:36.771Z",
+              "WhenOpened": "2025-07-31T22:19:33.9Z",
               "EditorCaption": ""
             },
             {
