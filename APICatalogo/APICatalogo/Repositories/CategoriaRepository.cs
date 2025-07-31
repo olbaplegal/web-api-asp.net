@@ -2,6 +2,8 @@
 using APICatalogo.Models;
 using APICatalogo.Pagination;
 using Microsoft.EntityFrameworkCore;
+using X.PagedList;
+using X.PagedList.Extensions;
 
 namespace APICatalogo.Repositories;
 
@@ -13,26 +15,34 @@ public class CategoriaRepository : Repository<Categoria>, ICategoriaRepository
     {
     }
 
-    public async Task<PagedList<Categoria>> GetCateoriasAsync(CategoriasParameters categoriasParams)
+    public async Task<IPagedList<Categoria>> GetCateoriasAsync(CategoriasParameters categoriasParams)
     {
         var categorias = await GetAllAsync();
 
         var categoriasOrdenadas = categorias.OrderBy(p => p.CategoriaId).AsQueryable();
 
-        var resultado = PagedList<Categoria>.ToPagedList(categoriasOrdenadas, categoriasParams.PageNumber, categoriasParams.PageSize);
+        //var resultado = PagedList<Categoria>.ToPagedList(categoriasOrdenadas, categoriasParams.PageNumber, categoriasParams.PageSize);
+
+        var resultado = await categoriasOrdenadas.ToPagedListAsync(categoriasParams.PageNumber,
+                                                             categoriasParams.PageSize);
 
         return resultado;
     }
 
-    public async Task<PagedList<Categoria>> GetCateoriasFiltroNomeAsync(CategoriasFiltroNome categoriasParams)
+    public async Task<IPagedList<Categoria>> GetCateoriasFiltroNomeAsync(CategoriasFiltroNome categoriasParams)
     {
         var categorias = await GetAllAsync();
             
 
         if (!string.IsNullOrEmpty(categoriasParams.Nome))
+        {
             categorias = categorias.Where(c => c.Nome.Contains(categoriasParams.Nome));
+        }
 
-        var categoriasFiltradas = PagedList<Categoria>.ToPagedList(categorias.AsQueryable(), categoriasParams.PageNumber, categoriasParams.PageSize);
+        //var categoriasFiltradas = PagedList<Categoria>.ToPagedList(categorias.AsQueryable(), categoriasParams.PageNumber, categoriasParams.PageSize);
+
+        var categoriasFiltradas = await categorias.ToPagedListAsync(categoriasParams.PageNumber,
+                                                                    categoriasParams.PageSize);
 
         return categoriasFiltradas;
     }
