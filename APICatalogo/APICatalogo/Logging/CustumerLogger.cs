@@ -29,7 +29,7 @@ namespace APICatalogo.Logging
 
         private void EscreverTextoNoArquivo(string mensagem)
         {
-            string caminhoArquivoLog = @"D:\dev\web-api-asp.net\APICatalogo\Pablo_Log.txt";
+            string caminhoArquivoLog = "D:\\Vault\\dev\\web-api-asp.net\\APICatalogo\\Pablo_Log.txt";
             using (StreamWriter streamWriter = new StreamWriter(caminhoArquivoLog, true))
             {
                 try

@@ -12,4 +12,71 @@ FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (1ms) [Parameters
 SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
 FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
-FROM `Produtos` AS `p`
+FROM `Produtos` AS `p`Information : 20101 : Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='catalogodb' AND TABLE_NAME='__EFMigrationsHistory';Information : 20101 : Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE `__EFMigrationsHistory` (
+    `MigrationId` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+    `ProductVersion` varchar(32) CHARACTER SET utf8mb4 NOT NULL,
+    CONSTRAINT `PK___EFMigrationsHistory` PRIMARY KEY (`MigrationId`)
+) CHARACTER SET=utf8mb4;Information : 20101 : Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='catalogodb' AND TABLE_NAME='__EFMigrationsHistory';Information : 20101 : Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `MigrationId`, `ProductVersion`
+FROM `__EFMigrationsHistory`
+ORDER BY `MigrationId`;Information : 20402 : Applying migration '20250508154442_MigracaoInicial'.Information : 20101 : Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER DATABASE CHARACTER SET utf8mb4;Information : 20101 : Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE `Categorias` (
+    `CategoriaId` int NOT NULL AUTO_INCREMENT,
+    `Nome` longtext CHARACTER SET utf8mb4 NULL,
+    `ImagemUrl` longtext CHARACTER SET utf8mb4 NULL,
+    CONSTRAINT `PK_Categorias` PRIMARY KEY (`CategoriaId`)
+) CHARACTER SET=utf8mb4;Information : 20101 : Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE `Produtos` (
+    `ProdutoId` int NOT NULL AUTO_INCREMENT,
+    `Nome` longtext CHARACTER SET utf8mb4 NULL,
+    `Descricao` longtext CHARACTER SET utf8mb4 NULL,
+    `Preco` decimal(65,30) NOT NULL,
+    `ImagemUrl` longtext CHARACTER SET utf8mb4 NULL,
+    `Estoque` float NOT NULL,
+    `DataCadastro` datetime(6) NOT NULL,
+    `CategoriaId` int NOT NULL,
+    CONSTRAINT `PK_Produtos` PRIMARY KEY (`ProdutoId`),
+    CONSTRAINT `FK_Produtos_Categorias_CategoriaId` FOREIGN KEY (`CategoriaId`) REFERENCES `Categorias` (`CategoriaId`) ON DELETE CASCADE
+) CHARACTER SET=utf8mb4;Information : 20101 : Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX `IX_Produtos_CategoriaId` ON `Produtos` (`CategoriaId`);Information : 20101 : Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250508154442_MigracaoInicial', '8.0.13');Information : 20402 : Applying migration '20250509134557_AjusteTabelas'.Information : 20101 : Executed DbCommand (101ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `Preco` decimal(10,2) NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Produtos` SET `Nome` = ''
+WHERE `Nome` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (259ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `Nome` varchar(80) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Produtos` SET `ImagemUrl` = ''
+WHERE `ImagemUrl` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (107ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `ImagemUrl` varchar(300) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Produtos` SET `Descricao` = ''
+WHERE `Descricao` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (113ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Produtos` MODIFY COLUMN `Descricao` varchar(300) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Categorias` SET `Nome` = ''
+WHERE `Nome` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (76ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Categorias` MODIFY COLUMN `Nome` varchar(80) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE `Categorias` SET `ImagemUrl` = ''
+WHERE `ImagemUrl` IS NULL;
+SELECT ROW_COUNT();Information : 20101 : Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE `Categorias` MODIFY COLUMN `ImagemUrl` varchar(300) CHARACTER SET utf8mb4 NOT NULL;Information : 20101 : Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250509134557_AjusteTabelas', '8.0.13');Information : 20402 : Applying migration '20250509135039_PopulaCategorias'.Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Categorias(Nome, ImagemUrl) Values('Bebidas','bebidas.jpg')Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Categorias(Nome, ImagemUrl) Values('Lanches','lanches.jpg')Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Categorias(Nome, ImagemUrl) Values('Sobremesas','sobremesas.jpg')Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250509135039_PopulaCategorias', '8.0.13');Information : 20402 : Applying migration '20250509143059_PupulaProdutos'.Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Produtos(Nome,Descricao,Preco,ImagemUrl,Estoque,DataCadastro,CategoriaId)Values('Coca-Cola Diet','Refrigerante de Cola 350 ml','5.45','cocacola.jpg',50,now(),1)Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Produtos(Nome,Descricao,Preco,ImagemUrl,Estoque,DataCadastro,CategoriaId)Values('Lanche de Atum','Lanche de Atum com maionese',8.50,'atum.jpg',10,now(),2)Information : 20101 : Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+Insert into Produtos(Nome,Descricao,Preco,ImagemUrl,Estoque,DataCadastro,CategoriaId)Values('Pudim 100 g','Pudim de leite condensado 100g',6.75,'pudim.jpg',20,now(),3)Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250509143059_PupulaProdutos', '8.0.13');Information : 20402 : Applying migration '20250820205424_atualizacao'.Information : 20101 : Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
+VALUES ('20250820205424_atualizacao', '8.0.13');Information : 0 : Application started. Press Ctrl+C to shut down.Information : 0 : Hosting environment: DevelopmentInformation : 0 : Content root path: D:\Vault\dev\web-api-asp.net\APICatalogo\APICatalogo
