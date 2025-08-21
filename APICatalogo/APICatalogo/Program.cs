@@ -17,6 +17,9 @@ options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles).
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAuthorization(); // incluindo serviço de autorização
+builder.Services.AddAuthentication("Bearer").AddJwtBearer(); // incluindo serviço da autenticação
+
 string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
                  options.UseMySql(mySqlConnection,
@@ -47,7 +50,6 @@ builder.Services.AddAutoMapper(typeof(ProdutoDTOMappingProfile));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -56,11 +58,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
-
-//meu projeto
